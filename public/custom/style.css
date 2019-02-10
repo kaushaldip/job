@@ -1,0 +1,360 @@
+.required label::after {
+    color: #f00;
+    content: "* ";
+    font-weight: bold;
+}
+body{
+	padding-top: 92px;
+}
+.header{
+	background: #FFFFFF;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99999;
+	/*box-shadow: 0px 2px 2px rgba(0,0,0,0.5);*/
+}
+.sub-menu{
+	margin-top: 2px;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	background: #FAFAFA;
+}
+.dashboad-content{
+	margin-top: 50px;
+}
+.btn-login{
+	padding: 0px !important;
+	margin-bottom: -30px !important;
+	bottom: 30px;
+	border: none !important;
+	width: 100px;
+	margin: 0px auto;
+	background: #3BB8FF;
+	color: #fff !important;
+	z-index: 99999 !important;
+}
+.btn-login:hover{
+	background: #3BB8FF !important;
+	color: #777 !important;
+}
+.has-btn:hover a{
+	border: none !important;
+}
+.uploader{
+	display: table;
+	background: #E8E9EC;
+	width: 100%;
+	height: 200px;
+	border: 2px dashed #0087F7;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.uploader h5{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.zipcode{
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+}
+#map {
+	height: 80vh;
+	width: 100%;
+}
+.search_results{
+	overflow: scroll;
+	height: 80vh;
+	padding-bottom: 30px;
+}
+label.btn span {
+  font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #7AA3CC;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label.active{
+    color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border: 0px solid #c8c8c8;
+border-radius: 3px;
+color: #c8c8c8;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.focus{
+	outline: none !important;
+}
+label:focus{
+	outline: none !important;
+}
+.nav-tabs{
+	margin-bottom: 15px;
+}
+ /*======= tabs css ===========*/
+
+ /* Default tab style */
+.tabs {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 300;
+	font-size: 1.55em;
+}
+
+/* Nav */
+.tabs nav {
+	text-align: center;
+}
+
+.tabs nav ul {
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	-ms-box-pack: center;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+.tabs nav ul li {
+	position: relative;
+	z-index: 1;
+	display: block;
+	margin: 0;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.tabs nav a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 2;
+}
+
+.tabs nav a span {
+	vertical-align: middle;
+	font-size: 0.75em;
+	margin-left: 10px;
+}
+
+.tabs nav li.tab-current a {
+	color: #FFFFFF;
+}
+
+.tabs nav a:focus {
+	outline: none;
+}
+/* Content */
+.content-wrap {
+	position: relative;
+}
+
+.content-wrap section {
+	display: none;
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 1200px;
+	text-align: center;
+}
+
+.content-wrap section.content-current {
+	display: block;
+}
+
+.content-wrap section p {
+	margin: 0;
+	padding: 0.75em 0;
+	color: rgba(40,44,42,0.05);
+	font-weight: 900;
+	font-size: 4em;
+	line-height: 1;
+}
+
+/* Fallback */
+.no-js .content-wrap section {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.no-flexbox nav ul {
+	display: block;
+}
+
+.no-flexbox nav ul li {
+	min-width: 15%;
+	display: inline-block;
+}
+
+@media screen and (max-width: 58em) {
+	.tabs nav a.icon span {
+		display: none;
+	}
+	.tabs nav a:before {
+		margin-right: 0;
+	}
+}
+
+.tabs-style-tzoid {
+	max-width: 1200px;
+}
+
+.tabs-style-tzoid nav {
+	/*padding: 0 1em;*/
+}
+
+.tabs-style-tzoid nav ul li {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-tzoid nav ul li a {
+	padding: 0 1.5em 0 0.3em;
+	color: #FFFFFF;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+@media screen and (max-width: 54em) {
+	.tabs-style-tzoid nav ul li a {
+		padding: 0 0.5em 0 0.3em;
+	}
+}
+
+.tabs-style-tzoid nav ul li a:hover,
+.tabs-style-tzoid nav ul li a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+.tabs-style-tzoid nav ul li.tab-current a,
+.tabs-style-tzoid nav ul li.tab-current a:hover {
+	color: #FFFFFF;
+}
+
+.tabs-style-tzoid nav ul li a span {
+	font-weight: 500;
+	font-size: 0.5em;
+}
+
+.tabs-style-tzoid nav ul li a::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	outline: 1px solid transparent;
+	/*border-radius: 10px 10px 0 0;*/
+	background: #9400D3;
+	box-shadow: inset 0 -3px 3px rgba(0,0,0,0.05);
+	content: '';
+	border-radius: 0 0 10px 10px;
+	-webkit-transform: skew(-28deg) rotateX(0.93deg) translateZ(-1px);
+	transform: skew(-28deg) rotateX(0.93deg) translateZ(-1px);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-tzoid nav ul li.tab-current a::after,
+.tabs-style-tzoid .content-wrap {
+	background: #8A2BE2;
+	box-shadow: none;
+}
+@media screen and (max-width: 768px){
+	.tabs nav a span {
+	    display: none;
+	}
+}
+.panel-body{
+	min-height: 500px;
+}
+
+#advance_option{
+	display: none;
+}
+
+#adv_hide{
+	display: none;
+}
