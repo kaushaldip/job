@@ -41,8 +41,11 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
+
         $this->validateLogin($request);
-        $user = User::where('username', $request->only($this->username()))->firstOrFail();
+
+        $user = User::where('username', $request->only($this->username()))->first();
+
         if ( $user && !$user->confirmed ) {
             return $this->sendLockedAccountResponse($request);
         }

@@ -17,7 +17,7 @@ class CreateEmployeeDetailsTable extends Migration
         Schema::create('employee_details', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('state_id')->unsigned();
+            $table->integer('state_id')->unsigned()->default(1);
 
             $table->string('npi_email')->nullable();
             $table->string('program')->nullable();
@@ -27,8 +27,8 @@ class CreateEmployeeDetailsTable extends Migration
             $table->string('city')->nullable();
             $table->integer('zip')->nullable();
 
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('state_id')->references('id')->on('states');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
             $table->timestamps();
         });
     }

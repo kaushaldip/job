@@ -19,7 +19,7 @@ class CreateDocumentsTable extends Migration
             $table->string('file');
             $table->string('client_file');
             $table->integer('status');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

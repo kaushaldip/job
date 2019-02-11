@@ -123,7 +123,7 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::group([
             'middleware' => 'admin',
-            'domain' => 'admin.medjobs.dev',
+            'domain' => 'admin.job.test',
             'namespace' => $this->namespace.'\admin',
             ], function ($router) {
             require base_path('routes/admin.php');

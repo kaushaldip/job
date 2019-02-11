@@ -22,7 +22,7 @@ class CreateAppliesTable extends Migration
             $table->integer('document_id')->unsigned()->nullable();
             $table->unique(['user_id', 'job_id']);
             $table->foreign('job_apply_status_id')->references('id')->on('job_apply_status');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('job_id')->references('id')->on('jobs');
             $table->foreign('cv_id')->references('id')->on('cvs');
             $table->foreign('document_id')->references('id')->on('documents');

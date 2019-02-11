@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCompnayDetailsTable extends Migration
+class CreateCompanyDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCompnayDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('hospital_details', function (Blueprint $table) {
+        Schema::create('company_details', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('employee_size_id')->nullable()->unsigned();
@@ -21,7 +21,7 @@ class CreateCompnayDetailsTable extends Migration
             $table->string('address_1')->nullable();
             $table->string('address_2')->nullable();
             $table->string('city')->nullable();
-            $table->integer('state_id')->unsigned();
+            $table->integer('state_id')->unsigned()->default(1);
             $table->integer('zip')->nullable();
             $table->string('website')->nullable();
             $table->string('logo')->nullable();
@@ -34,7 +34,7 @@ class CreateCompnayDetailsTable extends Migration
 
             $table->text('our_strength')->nullable();
             $table->text('about_us')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('state_id')->references('id')->on('states');
             $table->timestamps();
         });
@@ -47,6 +47,6 @@ class CreateCompnayDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('hospital_details');
+        Schema::dropIfExists('company_details');
     }
 }

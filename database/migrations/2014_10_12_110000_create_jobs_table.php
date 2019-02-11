@@ -32,9 +32,9 @@ class CreateJobsTable extends Migration
             $table->date('start_at');
             $table->integer('status_id')->default(0)->unsigned();
             $table->foreign('status_id')->references('id')->on('job_status');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('category_id')->references('id')->on('categories');
-            $table->foreign('state_id')->references('id')->on('states');
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
             $table->timestamps();
         });
     }

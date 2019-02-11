@@ -21,7 +21,7 @@ class CreateHospitalDetailsTable extends Migration
             $table->string('address_1')->nullable();
             $table->string('address_2')->nullable();
             $table->string('city')->nullable();
-            $table->integer('state_id')->unsigned();
+            $table->integer('state_id')->unsigned()->default(1);
             $table->integer('zip')->nullable();
             $table->string('website')->nullable();
             $table->string('logo')->nullable();
@@ -34,7 +34,7 @@ class CreateHospitalDetailsTable extends Migration
 
             $table->text('our_strength')->nullable();
             $table->text('about_us')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('state_id')->references('id')->on('states');
             $table->timestamps();
         });

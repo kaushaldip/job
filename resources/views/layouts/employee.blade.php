@@ -38,6 +38,7 @@
 		</div>	
 	</div>
 	</div>
+		<div class="container">
 	<div class="col-md-12 dashboad-content">
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane active">
@@ -53,6 +54,7 @@
 			</div>
 		</div>
 	</div>
+		</div>
 </div>
 </div>
 <script>
