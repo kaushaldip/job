@@ -6,11 +6,11 @@
       <h3>How It <span>Works?</span></h3>
     </div>
 
-    <link rel='stylesheet' id='layerslider-css'  href='http://interapt.com/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.3.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='layerslider-css'  href='https://cdn2.kreaturamedia.com/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.3.0' type='text/css' media='all' />
 
-    <script type='text/javascript' src='http://interapt.com/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0'></script>
-    <script type='text/javascript' src='http://interapt.com/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.3.0'></script>
-    <script type='text/javascript' src='http://interapt.com/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.3.0'></script>
+    <script type='text/javascript' src='https://cdn2.kreaturamedia.com/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0'></script>
+    <script type='text/javascript' src='https://cdn2.kreaturamedia.com/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.3.0'></script>
+    <script type='text/javascript' src='https://cdn2.kreaturamedia.com/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.3.0'></script>
     
     <script data-cfasync="false" type="text/javascript">
       var lsjQuery = jQuery;
